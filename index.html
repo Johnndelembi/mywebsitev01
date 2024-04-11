@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+
+    <nav id="desktop-nav">
+        <div class="logo">
+            John.
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></a></li>
+                <li><a href="#experience">Experience</a></a></li>
+                <li><a href="#projects">Projects</a></a></li>
+                <li><a href="#contact">Contacts</a></a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            John Ndelembi
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contacts</a></a></li> 
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/JOHN.PNG" alt="John Ndelembi profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section__text__p2">Hi, I'm</p>
+            <h1 class="title">John Ndelembi</h1>
+            <p class="section__text__p2">Software developer | Data Science Enthusiast</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Let's Talk
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedin Profile"
+                class="icon" onclick="location.href='https://linkedin.com/'">
+
+                <img src="./assets/github.png" alt="My github Profile"
+                class="icon" onclick="location.href='https://github.com/'">
+
+                <img src="./assets/whatsapp.png" alt="My whatsapp Profile"
+                class="icon" onclick="location.href='https://wa.link/6efi9h'">
+            </div>   
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get to Know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-picc.jpg" 
+                    alt="Profile picture"
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="experience icon"
+                        class="icon"/>
+                        <h3>Experience</h3>
+                        <p>18+ months </p><br/> Data Science & <br/> Software development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="education icon"
+                        class="icon"/>
+                        <h3>Education</h3>
+                        <p> B.A in Statistics - UDSM </p><br />Data science career <br/> based in Python</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quidem nam enim impedit ullam id sint dolore iusto veritatis! Accusamus cum corporis, sapiente ullam et ratione similique? Temporibus sunt, earum totam porro molestiae id quis tempora sint a assumenda perspiciatis sapiente harum ipsum. 
+                        Quae, voluptate! Voluptas, quasi excepturi. Optio, totam nesciunt!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon"
+        class="icon arrow" onclick="location.href='./#experience'"
+        />
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Data Science</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>R-LANG</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>STATA</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>EXCELL</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming | Software development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Python</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Django</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img 
+    src="./assets/arrow.png" 
+    alt="arrow icon"
+    class="icon arrow" 
+    onclick="location.href='./#projects'"
+    />
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title"> Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/AI.png" 
+                    alt="project 1"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project I
+                </h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                        Live Demo 
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/radoki.jpg" 
+                    alt="project 2"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project II
+                </h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://radoki.streamlit.app/'">
+                        Live Demo 
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img 
+                    src="./assets/mwanachuo.PNG" 
+                    alt="project 3"
+                    class="project-img"
+                    />
+                </div>
+                <h2 class="experience-sub-title project-title">
+                    Project III 
+                </h2>
+                <div class="btn-container">
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://github.com'">
+                        Github
+                    </button>
+                    <button 
+                    class="btn btn-color-2 project-btn" 
+                    onclick="location.href='https://mwanachuov04.streamlit.app'">
+                        Live Demo
+                    </button>
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title"> Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img 
+                src="./assets/email.png" 
+                alt="email icon" 
+                class="icon contact-icon email-icon"
+              />
+              <p><a href="williamjohnie61@gmail.com">Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/linkedin.png" 
+                alt="linkedin icon" 
+                class="icon contact-icon"
+              />
+              <p><a href="https://linkedin.com/">linkedin</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/whatsapp.png" 
+                alt="whatsapp icon" 
+                class="icon contact-icon"
+              />
+              <p><a href="https://wa.link/6efi9h">Whatsapp</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img 
+                src="./assets/twitter.png" 
+                alt="twitter icon" 
+                class="icon contact-icon"
+              />
+              <p><a href="https://x.com/">X (Twitter)</a></p>
+            </div>
+        </div>        
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></a></li>
+                    <li><a href="#experience">Experience</a></a></li>
+                    <li><a href="#projects">Projects</a></a></li>
+                    <li><a href="#contact">Contacts</a></a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 John Ndelembi, All rights reserved</p>
+    </footer>
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
